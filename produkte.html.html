@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMPC – Produkte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5c518;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(245, 197, 24, 0.2);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f5c518;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #f5c518;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    main {
+      flex: 1;
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #f5c518;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .product-box {
+      background-color: #111;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #222;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 15px rgba(245, 197, 24, 0.3);
+    }
+    .product-box img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product-box h3 {
+      color: #f5c518;
+      margin-bottom: 12px;
+    }
+    .product-box p {
+      color: #ccc;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      min-height: 60px;
+    }
+    .product-box span {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SMPC</h1>
+    <nav>
+      <a href="index.html">Über uns</a>
+      <a href="produkte.html">Produkte</a>
+      <a href="dienstleistungen.html">Dienstleistungen</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Unsere Produkte</h2>
+    <div class="products">
+      <div class="product-box">
+        <img src="https://via.placeholder.com/300x200" alt="High-End Gaming PC" />
+        <h3>High-End Gaming PC</h3>
+        <p>RTX 4070, Ryzen 7, 32GB RAM, 1TB SSD – ready to game!</p>
+        <span>1.899,00 €</span>
+      </div>
+      <div class="product-box">
+        <img src="https://via.placeholder.com/300x200" alt="Office PC" />
+        <h3>Office PC</h3>
+        <p>Ideal für Home-Office & Büro: i5, 16GB RAM, 500GB SSD.</p>
+        <span>699,00 €</span>
+      </div>
+      <div class="product-box">
+        <img src="https://via.placeholder.com/300x200" alt="Premium Kabelmanagement Set" />
+        <h3>Premium Kabelmanagement Set</h3>
+        <p>Für ein sauberes Setup: Sleeved Cables, Klettbinder & Co.</p>
+        <span>39,99 €</span>
+      </div>
+      <div class="product-box">
+        <img src="https://via.placeholder.com/300x200" alt="Windows 11 Installation" />
+        <h3>Windows 11 Installation + Lizenz</h3>
+        <p>Komplettservice inkl. Aktivierung & Einrichtung.</p>
+        <span>119,00 €</span>
+      </div>
+      <!-- Weitere Produkte kannst du hier ergänzen -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 SMPC – Powered by Sacho Matt | <a href="impressum.html">Impressum</a>
+  </footer>
+</body>
+</html>

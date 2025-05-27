@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMPC – Dienstleistungen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5c518;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(245, 197, 24, 0.2);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f5c518;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #f5c518;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    main {
+      flex: 1;
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #f5c518;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .service-box {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #222;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .service-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 15px rgba(245, 197, 24, 0.3);
+    }
+    .service-box h3 {
+      color: #f5c518;
+      margin-bottom: 15px;
+    }
+    .service-box p {
+      color: #ccc;
+      font-size: 1rem;
+      min-height: 80px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SMPC</h1>
+    <nav>
+      <a href="index.html">Über uns</a>
+      <a href="produkte.html">Produkte</a>
+      <a href="dienstleistungen.html">Dienstleistungen</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Unsere Dienstleistungen</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>PC-Zusammenbau</h3>
+        <p>Wir bauen deinen Wunsch-PC professionell zusammen – präzise, sauber und auf deine Anforderungen abgestimmt.</p>
+      </div>
+      <div class="service-box">
+        <h3>Reparatur</h3>
+        <p>Diagnose und Reparatur von Hardware- und Software-Problemen schnell und zuverlässig.</p>
+      </div>
+      <div class="service-box">
+        <h3>Kabelmanagement</h3>
+        <p>Saubere und effiziente Verkabelung für besseren Airflow und ein aufgeräumtes Setup.</p>
+      </div>
+      <div class="service-box">
+        <h3>Windows & Software Installation</h3>
+        <p>Installation, Updates und Lizenzberatung inklusive Einrichtung – damit dein System rund läuft.</p>
+      </div>
+      <div class="service-box">
+        <h3>Fernwartung</h3>
+        <p>Schnelle Online-Hilfe bei Problemen, ohne dass du das Haus verlassen musst.</p>
+      </div>
+      <div class="service-box">
+        <h3>Hardware-Beratung</h3>
+        <p>Wir beraten dich zu PC-Komponenten, Zusammenstellungen und Upgrades individuell und transparent.</p>
+      </div>
+      <!-- Weitere Dienstleistungen nach Bedarf -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 SMPC – Powered by Sacho Matt | <a href="impressum.html">Impressum</a>
+  </footer>
+</body>
+</html>
